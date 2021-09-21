@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Проверка событий</title>
+    <script>
+        function f_alert(s, e){
+            e = e || window.event;
+            if(e.stopPropogation) e.stopPropogation();
+                else e.cancelBubble = true;
+            window.alert(s);
+        }
+    </script>
+</head>
+<body onclick="f_alert('OnClick for Document', event);">
+    <p onclick="f_alert('OnClick for Paragraph', event);">Щелкните мышкой
+        <span style="color: green;" onclick="f_alert('OnClick for Span', event);">Here</span>
+    </p>
+
+</body>
+</html>

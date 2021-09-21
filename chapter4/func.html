@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function</title>
+</head>
+<body>
+<script>
+function map(f, a){
+    var resFunc = [];
+    var i;
+    for(i = 0;i != a.length; i++){
+        resFunc[i] = f(a[i]);
+        return resFunc;
+    }
+}
+var f = function(z){
+    return z * z * z;
+}
+var nums = [0,5,7,9,12];
+var cube  = map(f,nums);
+document.write(cube);
+</script>
+</body>
+</html>

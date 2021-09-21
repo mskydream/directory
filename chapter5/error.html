@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Глобальные и локальные переменные</title>
+    <script>
+        // Global
+        var A = 10;
+        var B = 20;
+        function F1(){
+        //Local
+            var Z = 10;
+            var B = 5;
+            document.write("<br>A = " + A);
+            document.write("<br>B = " + B);
+            document.write("<br>Z = " + Z);
+        }
+    </script>
+</head>
+<body>
+<script>
+F1();
+document.write("<HR>");
+document.write("A = " + A);
+document.write("<br>B = " + B);
+document.write("<br>Z = " + Z);
+</script>
+</body>
+</html>

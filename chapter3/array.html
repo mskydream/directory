@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Поиск минимума в массиве</title>
+</head>
+<body>
+<script>
+var M = [9,11,7,99,3,2,33,3];
+
+Min = M[0];
+Min_ind = 0;
+
+document.write('Массив: <br>' + Min + " ");
+
+for(i = 1; i < M.length; i++){
+    if(M[i] < Min){
+        Min = M[i];
+        Min_ind = i;
+    }
+    document.write(M[i] + " ");
+}
+
+document.write('<br>Минимум: ' + Min);
+document.write('<br>Индекс: ' + Min_ind);
+</script>
+</body>
+</html>

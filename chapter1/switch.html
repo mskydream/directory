@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>пример изпользования switch</title>
+</head>
+<body>
+<script>
+var command = window.prompt("введите действие", "");
+
+if (command == null){
+    document.write('Нажата кнопка Отмена');
+}else{
+    switch (parseInt(command)){
+        case 1: alert('Выбрано действие 1'); break;
+        case 2: alert('Выбрано действие 2'); break;
+        case 3: alert('Выбрано действие 3'); break;
+        case 4: alert('Выбрано действие 4'); break;
+        default: alert('Нейзвестное');
+    }
+}
+</script>
+</body>
+</html>

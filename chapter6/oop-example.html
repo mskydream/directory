@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OOP example</title>
+</head>
+<body>
+<script>
+function Human(firstname, lastname){
+    this.firstname = firstname;
+    this.lastname = lastname;
+}
+Human.prototype.getFullName = function(){
+    var fname = this.firstname + " " + this.lastname;
+    return fname;
+}
+
+var John = new Human("Jhon","Doe");
+document.write(John.getFullName());
+
+document.write("<br>");
+
+var Ivan = new Human("Ivan", "Ivanov");
+document.write(Ivan.getFullName());
+</script>
+</body>
+</html>

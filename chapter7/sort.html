@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sort in Array</title>
+</head>
+<body>
+<script>
+function my_unique_sort(first, second){
+    var x = first.toLowerCase();
+    var y = second.toLowerCase();
+    if(x > y) return 1;
+    if(x < y) return -1;
+    return 0;
+}
+var Mass = ["One", "Two9","open","apple"];
+Mass.sort(my_unique_sort);
+console.log(Mass.join(", "));
+</script>
+</body>
+</html>

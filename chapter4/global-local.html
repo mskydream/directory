@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Глобальные и локальные переменные</title>
+    <script>
+        var A = 100;
+        var B = 200;
+        function F1(){
+            var X = 100;
+            var B = 50;
+
+            document.write("<br>A = " + A);
+            document.write("<br>B = " + B);
+            document.write("<br>X = " + X);
+        }
+    </script>
+</head>
+<body>
+<script>
+F1();
+document.write("<BR>");
+document.write("A = " + A);
+document.write("<br>B = " + B);
+</script>
+</body>
+</html>
